@@ -88,7 +88,7 @@
 <nav class="toc" aria-label="目录">
   <a href="#scope">1. 适用范围与运营者</a>
   <a href="#data">2. 我们处理哪些信息</a>
-  <a href="#ai">3. AI 功能与第三方端点</a>
+  <a href="#ai">3. AI 功能与 DeepSeek</a>
   <a href="#backup">4. 备份与导出</a>
   <a href="#notify">5. 通知与提醒</a>
   <a href="#permissions">6. 系统权限</a>
@@ -151,11 +151,11 @@
   API Key 保存在 HarmonyOS 系统级 Asset Store 中；句栖不会把你的 API Key 写入普通配置文件，也不会把它包含在备份里。
 </p>
 
-<h2 id="ai">3. AI 功能与第三方端点</h2>
+<h2 id="ai">3. AI 功能与 DeepSeek</h2>
 <p>
   AI 功能默认关闭，只有你在设置中开启并主动点击生成时才会触发。
 </p>
-<p>触发时，句栖会把完成该次生成所必需的内容发送到<strong>你自己填写的 AI 服务端点</strong>，通常包括：</p>
+<p>触发时，句栖会把完成该次生成所必需的内容发送到<strong>DeepSeek 官方 API（https://api.deepseek.com）</strong>，通常包括：</p>
 <ul>
   <li>当前句子或关键词；</li>
   <li>当前所选书目/分类；</li>
@@ -167,7 +167,7 @@
   句栖不会为了 AI 生成而上传你的完整句库、材料全文、备注集合或备份文件。
 </p>
 <p>
-  该 AI 端点由你自行选择并填写，可能是第三方服务。你发送到该端点的内容，适用该服务提供者的隐私政策与数据处理规则，我们无法控制。请只填写你信任的端点，并避免在提示词中放入你不希望离开设备的信息。
+  AI 服务由 DeepSeek 提供。你发送到 DeepSeek 的内容，适用 DeepSeek 的隐私政策与数据处理规则，我们无法控制。请避免在提示词中放入你不希望离开设备的信息。
 </p>
 <p>
   如果你关闭 AI 功能，句栖不会发起 AI 网络请求。
